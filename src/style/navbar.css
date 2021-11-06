@@ -1,0 +1,31 @@
+nav {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #c3ccd9;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.13rem;
+  line-height: 21px;
+}
+
+nav li {
+  margin-right: 1.25em;
+}
+
+a {
+  text-decoration: none;
+  color: #c3ccd9;
+  text-decoration: inherit;
+}

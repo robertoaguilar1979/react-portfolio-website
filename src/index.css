@@ -9,7 +9,7 @@
 
 img {
   object-fit: cover;
-  width: 100%;
+  /* width: 100%; */
 }
 
 body {
@@ -24,9 +24,4 @@ body {
   color: #c3ccd9;
   line-height: 1.4;
   font-size: 2.25rem;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
