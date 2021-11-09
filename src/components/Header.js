@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Button from "./Button";
 import heroImage from "../images/heroPic.png";
+
 function Header() {
   return (
     <>
@@ -18,7 +19,6 @@ function Header() {
         </HeroText>
         <HeroPic>
           <HeroImagePicture src={heroImage} alt="heroPicture" />
-          <img src={heroImage} alt="" />
         </HeroPic>
       </HeroWrapper>
     </>
@@ -31,6 +31,9 @@ const HeroWrapper = styled.div`
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
+  position: relative;
+  height: 100vh;
+  padding-top: 4.5em;
 `;
 const HeroText = styled.div`
   margin-left: 0.5em;
@@ -77,11 +80,16 @@ const HeroTextMainText = styled.p`
   margin-left: 0.3em;
 `;
 
-const HeroImagePicture = styled.image`
-  height: 787.4259033203125px;
-  width: 788.38427734375px;
+const HeroImagePicture = styled.img`
+  height: 787.43px;
+  width: 788.38px;
+  position: absolute;
+  right: -150px;
+  top: 25px;
+  margin-right: 2em;
+  /* width: 100%; */
 `;
 
 const HeroPic = styled.div`
-  margin-left: 0.5em;
+  margin-left: 1em;
 `;
