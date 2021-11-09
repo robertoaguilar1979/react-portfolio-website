@@ -1,16 +1,20 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
 function Button() {
   return (
-    <div>
+    <Wrapper>
       <Button1 href="mailto:robertoaguilar1979@gmail.com">Email Me</Button1>
-    </div>
-  )
+    </Wrapper>
+  );
 }
 
-export default Button
+export default Button;
 
+const Wrapper = styled.div`
+  display: inline-block;
+  margin: 0.5em 0;
+`;
 const Button1 = styled.a`
   padding: 0.65em 2.85em;
   font-family: Poppins;
@@ -30,4 +34,4 @@ const Button1 = styled.a`
   :hover {
     background: #6074f7;
   }
-`
+`;
