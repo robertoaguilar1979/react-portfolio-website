@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import { Router, BrowserRouter } from "react-router-dom";
 import Section2 from "./components/Section2";
+import content from "./content";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Home />
       <Section2 />
+      {}
     </div>
   );
 }
