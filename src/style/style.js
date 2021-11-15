@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const BabyBlue = styled.h3`
+export const BabyBlue = styled.span`
   color: #51dde8;
 `;
 
-export const Green = styled.h3`
+export const Green = styled.span`
   color: #20f24e;
 `;
 
