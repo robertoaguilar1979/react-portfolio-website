@@ -1,16 +1,20 @@
 import React from "react";
 import styled from "styled-components";
-import { Container, Green, BabyBlue } from "../style/style";
+import { Green, BabyBlue } from "../style/style";
+import section4 from "../images/section4.svg";
 
 function ShopifyDiv({ title, body, image }) {
   return (
     <Div>
       <TextContainer>
-        <Title>{title}</Title>
-        <Body>{body}</Body>
+        <Title>what is shopify?</Title>
+        <Body>
+          Shopify is specially made for businesses to sell their
+          products/services online.{" "}
+        </Body>
       </TextContainer>
       <SvgImageDiv>
-        <Svg src={`../images/${image}`} alt="svg images" />
+        <Svg src={section4} alt="svg images" />
       </SvgImageDiv>
     </Div>
   );
@@ -18,8 +22,11 @@ function ShopifyDiv({ title, body, image }) {
 
 export default ShopifyDiv;
 
-const Div = styled(Container)`
+const Div = styled.div`
   display: flex;
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
 `;
 const TextContainer = styled.div`
   margin: auto 0;
@@ -34,6 +41,7 @@ const Body = styled.p`
   line-height: 61px;
   letter-spacing: 0em;
   text-align: left;
+  max-width: 719px;
 `;
 
 const SvgImageDiv = styled.div`
@@ -41,6 +49,5 @@ const SvgImageDiv = styled.div`
 `;
 
 const Svg = styled.img`
-  max-width: 100%;
-  height: auto;
+  max-width: 816px;
 `;

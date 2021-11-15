@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Container, Green, BabyBlue } from "../style/style";
+import { Green, BabyBlue } from "../style/style";
 import section3 from "../images/section3.svg";
 
 function ShopifyDiv({ title, body, image, imgTitle }) {
