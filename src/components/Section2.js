@@ -36,10 +36,12 @@ const Section = styled(Container)`
     max-width: 725px;
     margin: 0 auto;
     padding: 2.65em;
-    text-align: center;
+    /* text-align: center; */
   }
   @media (max-width: 400px) {
     padding: 1.5em;
+    text-align: center;
+    line-height: 1.1;
   }
 `;
 
@@ -88,7 +90,7 @@ const SecondParagraph = styled.p`
   @media (max-width: 400px) {
     margin-top: 1.8em;
     font-size: 1.4rem;
-    line-height: 1.25;
+    line-height: 1.75;
     text-align: center;
   }
 `;

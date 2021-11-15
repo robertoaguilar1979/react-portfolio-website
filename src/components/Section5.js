@@ -1,23 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 import { Green, BabyBlue } from "../style/style";
-import section4 from "../images/section4.svg";
+import section5 from "../images/section5.svg";
 
 function ShopifyDiv({ title, body, image, imgTitle }) {
   return (
     <Div>
+      <SvgImageDiv>
+        <Svg src={section5} alt={imgTitle} />
+      </SvgImageDiv>
       <TextContainer>
-        <Title>
-          what is <Green>shopify</Green>?
-        </Title>
+        <Title>{title}</Title>
         <Body>
-          <Green>Shopify</Green> is specially made for businesses to sell their
-          <BabyBlue>products/services </BabyBlue>online.{" "}
+          By Using <Green>Shopify</Green> your now able to compete with the
+          likes of Amazon and Walmart.
         </Body>
       </TextContainer>
-      <SvgImageDiv>
-        <Svg src={section4} alt={imgTitle} />
-      </SvgImageDiv>
     </Div>
   );
 }
@@ -39,14 +37,7 @@ const Div = styled.div`
 const TextContainer = styled.div`
   margin: auto 0;
 `;
-const Title = styled.h3`
-  @media (max-width: 410px) {
-    font-size: 1.85rem;
-    line-height: 1.4;
-    margin-top: 1rem;
-    margin-bottom: 0.75em;
-  }
-`;
+const Title = styled.h3``;
 
 const Body = styled.p`
   font-family: Poppins;
@@ -65,9 +56,6 @@ const Body = styled.p`
 
 const SvgImageDiv = styled.div`
   margin: auto 0;
-  @media (max-width: 810px) {
-    order: -1;
-  }
 `;
 
 const Svg = styled.img`

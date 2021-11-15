@@ -1,22 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 import { Green, BabyBlue } from "../style/style";
-import section4 from "../images/section4.svg";
+import section6 from "../images/section6.svg";
 
 function ShopifyDiv({ title, body, image, imgTitle }) {
   return (
     <Div>
       <TextContainer>
-        <Title>
-          what is <Green>shopify</Green>?
-        </Title>
+        <Title>{title}</Title>
         <Body>
-          <Green>Shopify</Green> is specially made for businesses to sell their
-          <BabyBlue>products/services </BabyBlue>online.{" "}
+          <Green>Shopify</Green> does all the heavy lifting of{" "}
+          <BabyBlue>setting up the infrastructure</BabyBlue> so that you can
+          focus on selling your products.
         </Body>
       </TextContainer>
       <SvgImageDiv>
-        <Svg src={section4} alt={imgTitle} />
+        <Svg src={section6} alt={imgTitle} />
       </SvgImageDiv>
     </Div>
   );
@@ -40,12 +39,7 @@ const TextContainer = styled.div`
   margin: auto 0;
 `;
 const Title = styled.h3`
-  @media (max-width: 410px) {
-    font-size: 1.85rem;
-    line-height: 1.4;
-    margin-top: 1rem;
-    margin-bottom: 0.75em;
-  }
+  font-size: 1.75rem;
 `;
 
 const Body = styled.p`

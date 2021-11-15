@@ -28,6 +28,12 @@ const Div = styled.div`
   padding: 2em;
   justify-content: center;
   align-items: center;
+  @media (max-width: 810px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 const TextContainer = styled.div`
   margin: auto 0;
@@ -36,13 +42,17 @@ const Title = styled.h3``;
 
 const Body = styled.p`
   font-family: Poppins;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-style: normal;
   font-weight: 400;
   line-height: 61px;
   letter-spacing: 0em;
   text-align: left;
   max-width: 719px;
+  @media (max-width: 410px) {
+    font-size: 1.55rem;
+    line-height: 1.4;
+  }
 `;
 
 const SvgImageDiv = styled.div`
@@ -51,4 +61,7 @@ const SvgImageDiv = styled.div`
 
 const Svg = styled.img`
   max-width: 816px;
+  @media (max-width: 410px) {
+    max-width: 400px;
+  }
 `;
