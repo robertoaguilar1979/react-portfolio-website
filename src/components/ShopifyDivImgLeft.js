@@ -1,16 +1,21 @@
 import React from "react";
 import styled from "styled-components";
-import { Container } from "../style/style";
+import { Container, Green, BabyBlue } from "../style/style";
+import section3 from "../images/section3.svg";
 
-function ShopifyDiv({ title, body, image }) {
+function ShopifyDiv({ title, body, image, imgTitle }) {
   return (
     <Div>
       <SvgImageDiv>
-        <Svg src={`../images/${image}`} alt="svg images" />
+        <Svg src={section3} alt={imgTitle} />
       </SvgImageDiv>
       <TextContainer>
         <Title>{title}</Title>
-        <Body>{body}</Body>
+        <Body>
+          The great news here is that it’s now easier than ever to{" "}
+          <BabyBlue>Build </BabyBlue>and <BabyBlue>Launch </BabyBlue>a an
+          awesome website using <Green>Shopify</Green>.
+        </Body>
       </TextContainer>
     </Div>
   );
@@ -18,8 +23,11 @@ function ShopifyDiv({ title, body, image }) {
 
 export default ShopifyDiv;
 
-const Div = styled(Container)`
+const Div = styled.div`
   display: flex;
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
 `;
 const TextContainer = styled.div`
   margin: auto 0;
@@ -34,6 +42,7 @@ const Body = styled.p`
   line-height: 61px;
   letter-spacing: 0em;
   text-align: left;
+  max-width: 719px;
 `;
 
 const SvgImageDiv = styled.div`
@@ -41,6 +50,5 @@ const SvgImageDiv = styled.div`
 `;
 
 const Svg = styled.img`
-  max-width: 100%;
-  height: auto;
+  max-width: 816px;
 `;

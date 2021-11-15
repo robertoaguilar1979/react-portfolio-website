@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Container } from "../style/style";
+import { Container, Green, BabyBlue } from "../style/style";
 
 function ShopifyDiv({ title, body, image }) {
   return (
