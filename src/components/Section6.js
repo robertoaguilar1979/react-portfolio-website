@@ -38,9 +38,7 @@ const Div = styled.div`
 const TextContainer = styled.div`
   margin: auto 0;
 `;
-const Title = styled.h3`
-  font-size: 1.75rem;
-`;
+const Title = styled.h3``;
 
 const Body = styled.p`
   font-family: Poppins;
