@@ -5,6 +5,7 @@ import { Router, BrowserRouter } from "react-router-dom";
 import Section2 from "./components/Section2";
 import Shopify from "./pages/Shopify";
 import About from "./pages/About";
+import Tools from "./components/Tools";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Section2 />
       <Shopify />
       <About />
+      <Tools />
     </div>
   );
 }
