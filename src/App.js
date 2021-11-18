@@ -6,7 +6,7 @@ import Section2 from "./components/Section2";
 import Shopify from "./pages/Shopify";
 import About from "./pages/About";
 import Tools from "./components/Tools";
-
+import Contact from "./pages/Contact";
 function App() {
   return (
     <div className="App">
@@ -16,6 +16,7 @@ function App() {
       <Shopify />
       <About />
       <Tools />
+      <Contact />
     </div>
   );
 }
