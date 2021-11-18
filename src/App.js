@@ -8,6 +8,7 @@ import Section4 from "./components/Section4";
 import Section5 from "./components/Section5";
 import Section6 from "./components/Section6";
 import AboutSection1 from "./components/AboutSection1";
+import AboutSection2 from "./components/AboutSection2";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Section5 imgTitle="section 5 svg" />
       <Section6 imgTitle="section 6 svg" />
       <AboutSection1 />
+      <AboutSection2 />
     </div>
   );
 }

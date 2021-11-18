@@ -1,38 +1,48 @@
 import React from "react";
 import styled from "styled-components";
-import image1 from "../images/myPicture.png";
-import left from "../images/leftQuotes.svg";
-import right from "../images/rightQuotes.svg";
+import image1 from "../images/myPicture2.png";
+import tringle from "../images/tringle.svg";
 import { BabyBlue } from "../style/style";
 
-function AboutSection1() {
+function AboutSection2() {
   return (
     <div>
       <Container>
-        <AboutImage>
-          <Img src={image1} alt="picture of me sitting down"></Img>
-        </AboutImage>
         <TextContainer>
-          <Title>I will support you and help you get Real Results.</Title>
+          <Title>Let me chop away at your website.</Title>
           <BodyText>
-            <LeftQuotes src={left} alt="left quotes" />
+            <Img src={tringle} />
             <BabyBlue>
-              Why do I have this passion to help you build a shopify website? My
-              mission is to assist you in improving your website by leveraging
-              online tools that are made to make you money!<Break></Break>I want
-              to give you a wonderful service at an affordable price.
-              <Break></Break>I will guide you through any process and give you
-              my support every step of the way.
+              I will teach you about the 5 ways to boost the selling power of
+              Your Shopify Website that no one else is telling you.
             </BabyBlue>
-            <RightQuotes src={right} alt="right quotes" />
+          </BodyText>
+          <BodyText>
+            <Img src={tringle} />
+            <BabyBlue>
+              You get all my no-nonsense website recommendations.
+            </BabyBlue>
+          </BodyText>
+          <BodyText>
+            <Img src={tringle} />
+            <BabyBlue>I work hard so that you don’t have too!</BabyBlue>
+          </BodyText>
+          <BodyText>
+            <Img src={tringle} />
+            <BabyBlue>
+              I make everything easy so you can focus on selling your products.
+            </BabyBlue>
           </BodyText>
         </TextContainer>
+        <AboutImage>
+          <MainImage src={image1} alt="picture of me sitting down"></MainImage>
+        </AboutImage>
       </Container>
     </div>
   );
 }
 
-export default AboutSection1;
+export default AboutSection2;
 
 const Break = styled.br`
   margin-bottom: 1em;
@@ -56,19 +66,26 @@ const Container = styled.div`
 `;
 const AboutImage = styled.div`
   margin: auto 0;
+  margin-bottom: 1.25em;
 
   @media (max-width: 810px) {
     order: -1;
-    margin-bottom: 1.25em;
   }
 `;
 
 const Img = styled.img`
-  margin-right: 1.75em;
+  margin-right: 0.65em;
+
+  @media (max-width: 410px) {
+    max-width: 400px;
+  }
+`;
+const MainImage = styled.img`
+  margin-left: 1.5em;
 
   @media (max-width: 810px) {
     order: -1;
-    margin-right: 0;
+    margin-left: 0;
   }
   @media (max-width: 410px) {
     max-width: 300px;
@@ -79,7 +96,6 @@ const Img = styled.img`
 const TextContainer = styled.div`
   @media (max-width: 410px) {
     max-width: 300px;
-    text-align: center;
   }
 `;
 
@@ -93,12 +109,15 @@ const Title = styled.h3`
     line-height: 1.4;
     margin-top: 1rem;
     margin-bottom: 0.75em;
+    text-align: center;
   }
 `;
 
 const BodyText = styled.p`
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   margin-left: 0.55em;
-
   font-family: Poppins;
   font-size: 1.68rem;
   font-style: normal;
@@ -106,24 +125,11 @@ const BodyText = styled.p`
   line-height: 40px;
   letter-spacing: 0em;
   text-align: left;
-  max-width: 630px;
+  max-width: 575px;
+  margin-bottom: 1.5em;
 
   @media (max-width: 410px) {
     font-size: 1.35rem;
     line-height: 1.4;
   }
-`;
-
-const LeftQuotes = styled.img`
-  width: 28px;
-  text-align: center;
-  margin-right: 0.35em;
-  margin-bottom: 0.35em;
-`;
-
-const RightQuotes = styled.img`
-  width: 28px;
-  text-align: center;
-  margin-left: 0.35em;
-  margin-top: 0.35em;
 `;

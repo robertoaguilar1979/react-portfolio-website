@@ -35,6 +35,9 @@ const Div = styled.div`
     justify-content: center;
     align-items: center;
   }
+  @media (max-width: 410px) {
+    padding: 0.5em;
+  }
 `;
 const TextContainer = styled.div`
   margin: auto 0;
@@ -45,6 +48,7 @@ const Title = styled.h3`
     line-height: 1.4;
     margin-top: 1rem;
     margin-bottom: 0.75em;
+    text-align: center;
   }
 `;
 
@@ -60,6 +64,7 @@ const Body = styled.p`
   @media (max-width: 410px) {
     font-size: 1.55rem;
     line-height: 1.4;
+    text-align: center;
   }
 `;
 

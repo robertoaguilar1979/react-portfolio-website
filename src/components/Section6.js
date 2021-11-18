@@ -34,6 +34,9 @@ const Div = styled.div`
     justify-content: center;
     align-items: center;
   }
+  @media (max-width: 410px) {
+    padding: 0.5em;
+  }
 `;
 const TextContainer = styled.div`
   margin: auto 0;
