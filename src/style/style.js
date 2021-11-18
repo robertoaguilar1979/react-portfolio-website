@@ -13,16 +13,6 @@ export const Container = styled.section`
   margin: 0 auto;
   padding: 6em;
 `;
-export const ContainerTablet = styled.section`
-  max-width: 725px;
-  margin: 0 auto;
-  padding: 3em;
-`;
-export const ContainerCell = styled.section`
-  max-width: 325px;
-  margin: 0 auto;
-  padding: 0.5em;
-`;
 
 export const FlexRow = styled.div`
   display: flex;
