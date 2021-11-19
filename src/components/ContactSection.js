@@ -22,27 +22,42 @@ const Container = styled.div`
   margin: 0 auto;
   display: flex;
   padding: 2em;
+  padding-bottom: 0;
   align-items: center;
   flex-direction: column;
+
+  @media (max-width: 410px) {
+    padding: 0.5em;
+    margin-top: 1.75em;
+  }
 `;
 
 const Title = styled.h3`
   font-family: Poppins;
-  font-size: 60px;
+  font-size: 3.75rem;
   font-style: normal;
   font-weight: 400;
   line-height: 90px;
   letter-spacing: 0em;
   text-align: left;
-`;
-const Paragraph = styled.p`grid-template-columns
-font-family: Poppins;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: 36px;
-letter-spacing: 0em;
-text-align: left;
 
+  @media (max-width: 410px) {
+    font-size: 2.75rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+`;
+const Paragraph = styled.p`
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  @media (max-width: 410px) {
+    font-size: 1.3rem;
+  }
 `;
 const CellPhone = styled.img``;

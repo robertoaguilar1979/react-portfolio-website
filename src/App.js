@@ -7,6 +7,8 @@ import Shopify from "./pages/Shopify";
 import About from "./pages/About";
 import Tools from "./components/Tools";
 import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
+
 function App() {
   return (
     <div className="App">
@@ -17,6 +19,7 @@ function App() {
       <About />
       <Tools />
       <Contact />
+      <Footer />
     </div>
   );
 }
