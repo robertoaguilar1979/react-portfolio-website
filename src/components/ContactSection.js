@@ -41,6 +41,11 @@ const Title = styled.h3`
   letter-spacing: 0em;
   text-align: left;
 
+  @media (max-width: 810px) {
+    font-size: 2.75rem;
+    line-height: 1.4;
+    text-align: center;
+  }
   @media (max-width: 410px) {
     font-size: 2.75rem;
     line-height: 1.4;
