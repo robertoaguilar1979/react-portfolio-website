@@ -1,5 +1,13 @@
+import styled from "styled-components";
+
 function hamburger() {
-  return <div></div>;
+  return (
+    <Container>
+      <HamburgerStripe></HamburgerStripe>
+      <HamburgerStripe></HamburgerStripe>
+      <HamburgerStripe></HamburgerStripe>
+    </Container>
+  );
 }
 
 export default hamburger;
