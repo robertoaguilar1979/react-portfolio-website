@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../images/logo.svg";
 import styled from "styled-components";
 import Navigation from "./Navigation";
+import Hamburger from "./Hamburger";
 
 const Navbar = () => {
   return (
@@ -10,7 +11,7 @@ const Navbar = () => {
         <LogoDiv className="logo">
           <Logo src={logo} alt="logo" />
         </LogoDiv>
-
+        <Hamburger />
         <Navigation />
       </NavbarContainer>
     </>
