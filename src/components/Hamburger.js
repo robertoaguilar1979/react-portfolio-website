@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import hamburger from "../images/hamburger.svg";
+import hamburger from "../images/bars.svg";
 
 function Hamburger() {
   return (
@@ -16,8 +16,7 @@ const IconWrapper = styled.div`
   fill: #c3ccd9;
   cursor: pointer;
 `;
-const HamburgerIcon = styled.svg`
-  height: 42px;
-  width: 42px;
-  fill: #c3ccd9;
+const HamburgerIcon = styled.img`
+  height: 29px;
+  width: 29px;
 `;

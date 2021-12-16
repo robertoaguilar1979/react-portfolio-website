@@ -5,12 +5,14 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 function Navigation() {
   return (
     <NavLinks>
-      <Ul>
-        <Li>Home</Li>
-        <Li>Shopify</Li>
-        <Li>About</Li>
-        <Li>Contact</Li>
-      </Ul>
+      <Router>
+        <Ul>
+          <Li to="/">Home</Li>
+          <Li to="/shopify">Shopify</Li>
+          <Li to="/about">About</Li>
+          <Li to="/contact">Contact</Li>
+        </Ul>
+      </Router>
     </NavLinks>
   );
 }
@@ -30,6 +32,6 @@ const Ul = styled.ul`
   line-height: 21px;
 `;
 
-const Li = styled.li`
+const Li = styled(Link)`
   margin-right: 2em;
 `;
