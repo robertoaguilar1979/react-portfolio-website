@@ -16,6 +16,7 @@ function App() {
       <Router>
         <Routes>
           <Route
+            exact
             path="/"
             element={
               <>
@@ -28,9 +29,17 @@ function App() {
               </>
             }
           />
-          <Route exact path="/shopify" element={<Shopify />} />
+          <Route path="/shopify" element={<Shopify />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route
+            path="/contact"
+            element={
+              <>
+                <Contact />
+                <Tools />
+              </>
+            }
+          />
         </Routes>
       </Router>
       <Footer />
