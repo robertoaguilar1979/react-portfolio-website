@@ -67,7 +67,7 @@ const SvgImageDiv = styled.div`
 
 const Svg = styled.img`
   max-width: 816px;
-  @media (max-width: 410px) {
-    max-width: 400px;
+  @media (max-width: 411px) {
+    max-width: 340px;
   }
 `;

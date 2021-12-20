@@ -3,22 +3,25 @@ import logo from "../images/logo.svg";
 import styled from "styled-components";
 import Navigation from "./Navigation";
 import Hamburger from "./Hamburger";
+import { useState } from "react";
 
 const Navbar = () => {
   return (
-    <>
+    <NavbarSection>
       <NavbarContainer>
         <LogoDiv className="logo">
           <Logo src={logo} alt="logo" />
         </LogoDiv>
-        <Hamburger />
+
         <Navigation />
       </NavbarContainer>
-    </>
+    </NavbarSection>
   );
 };
 
 export default Navbar;
+
+const NavbarSection = styled.section``;
 
 const NavbarContainer = styled.nav`
   max-width: 1440px;
@@ -29,6 +32,11 @@ const NavbarContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
   color: #c3ccd9;
+  padding: 1.5em;
+
+  @media (max-width: 450px) {
+    padding: 1em;
+  }
 `;
 
 const LogoDiv = styled.div``;

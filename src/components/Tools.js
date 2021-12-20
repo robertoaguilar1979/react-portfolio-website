@@ -35,7 +35,7 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
 
-  @media (max-width: 410px) {
+  @media (max-width: 411px) {
     padding: 0.35em;
     margin-top: 1em;
   }
@@ -49,7 +49,7 @@ const Title = styled.h3`
   line-height: 38px;
   letter-spacing: 0em;
 
-  @media (max-width: 410px) {
+  @media (max-width: 411px) {
     font-size: 1.75rem;
     text-align: center;
     margin-bottom: 1em;
@@ -61,7 +61,7 @@ const Icons = styled.div`
   display: flex;
   align-items: center;
 
-  @media (max-width: 410px) {
+  @media (max-width: 411px) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding-top: 0.4em;

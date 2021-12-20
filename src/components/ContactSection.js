@@ -65,4 +65,10 @@ const Paragraph = styled.p`
     font-size: 1.3rem;
   }
 `;
-const CellPhone = styled.img``;
+const CellPhone = styled.img`
+  @media (max-width: 411px) {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+`;
