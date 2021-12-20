@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import hamburger from "../images/bars.svg";
 import { useState } from "react";
 
@@ -7,40 +7,38 @@ function Navigation() {
   const [openHamburger, setOpenHamburger] = useState(false);
 
   return (
-    <NavLinks>
+    <NavigationLinks>
       <button onClick={() => setOpenHamburger(true)}>
         <img src={hamburger} alt="hamburger icon" />
       </button>
 
-      <Router>
-        <Ul className={openHamburger ? "display" : "notDisplay"}>
-          <button
-            onClick={() => setOpenHamburger(false)}
-            className={openHamburger ? "timesDisplay" : "timesNotDisplay"}
-          >
-            &times;
-          </button>
-          <Li to="/" onClick={() => setOpenHamburger(false)}>
-            Home
-          </Li>
-          <Li to="/shopify" onClick={() => setOpenHamburger(false)}>
-            Shopify
-          </Li>
-          <Li to="/about" onClick={() => setOpenHamburger(false)}>
-            About
-          </Li>
-          <Li to="/contact" onClick={() => setOpenHamburger(false)}>
-            Contact
-          </Li>
-        </Ul>
-      </Router>
-    </NavLinks>
+      <Ul className={openHamburger ? "display" : "notDisplay"}>
+        <button
+          onClick={() => setOpenHamburger(false)}
+          className={openHamburger ? "timesDisplay" : "timesNotDisplay"}
+        >
+          &times;
+        </button>
+        <Li exact to="/" onClick={() => setOpenHamburger(false)}>
+          Home
+        </Li>
+        <Li exact to="/shopify" onClick={() => setOpenHamburger(false)}>
+          Shopify
+        </Li>
+        <Li exact to="/about" onClick={() => setOpenHamburger(false)}>
+          About
+        </Li>
+        <Li exact to="/contact" onClick={() => setOpenHamburger(false)}>
+          Contact
+        </Li>
+      </Ul>
+    </NavigationLinks>
   );
 }
 
 export default Navigation;
 
-const NavLinks = styled.div`
+const NavigationLinks = styled.div`
   button {
     height: 42;
     width: 42;
@@ -48,10 +46,12 @@ const NavLinks = styled.div`
     background: transparent;
     cursor: pointer;
     z-index: 22;
-  }
-  img {
-    height: 29px;
-    width: 29px;
+    img {
+      height: 29px;
+      width: 29px;
+      background: transparent;
+    }
+
     @media (min-width: 811px) {
       display: none;
       z-index: 0;
