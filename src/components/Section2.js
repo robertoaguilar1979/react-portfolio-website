@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import image from "../images/section2.png";
-import { BabyBlue, Container, ContainerTablet } from "../style/style";
+import { BabyBlue, Container } from "../style/style";
 
 function Section2() {
   return (

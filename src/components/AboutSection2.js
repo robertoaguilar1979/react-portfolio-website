@@ -44,9 +44,6 @@ function AboutSection2() {
 
 export default AboutSection2;
 
-const Break = styled.br`
-  margin-bottom: 1em;
-`;
 const Container = styled.div`
   display: flex;
   padding: 2em;
