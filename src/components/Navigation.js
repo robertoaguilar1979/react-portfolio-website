@@ -8,18 +8,30 @@ function Navigation() {
 
   return (
     <NavLinks>
-      <button onClick={() => setOpenHamburger(!openHamburger)}>&times;</button>
-
-      <IconWrapper onClick={() => setOpenHamburger(!openHamburger)}>
-        <HamburgerIcon src={hamburger} alt="hamburger icon" />
-      </IconWrapper>
+      <button onClick={() => setOpenHamburger(true)}>
+        <img src={hamburger} alt="hamburger icon" />
+      </button>
 
       <Router>
-        <Ul>
-          <Li to="/">Home</Li>
-          <Li to="/shopify">Shopify</Li>
-          <Li to="/about">About</Li>
-          <Li to="/contact">Contact</Li>
+        <Ul className={openHamburger ? "display" : "notDisplay"}>
+          <button
+            onClick={() => setOpenHamburger(false)}
+            className={openHamburger ? "timesDisplay" : "timesNotDisplay"}
+          >
+            &times;
+          </button>
+          <Li to="/" onClick={() => setOpenHamburger(false)}>
+            Home
+          </Li>
+          <Li to="/shopify" onClick={() => setOpenHamburger(false)}>
+            Shopify
+          </Li>
+          <Li to="/about" onClick={() => setOpenHamburger(false)}>
+            About
+          </Li>
+          <Li to="/contact" onClick={() => setOpenHamburger(false)}>
+            Contact
+          </Li>
         </Ul>
       </Router>
     </NavLinks>
@@ -29,26 +41,20 @@ function Navigation() {
 export default Navigation;
 
 const NavLinks = styled.div`
-  @media (min-width: 811px) {
-    button {
-      display: none;
-    }
+  button {
+    height: 42;
+    width: 42;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    z-index: 22;
   }
-
-  @media (max-width: 810px) {
-    display: ${({ openHamburger }) => (openHamburger ? "none" : "block")};
-
-    button {
-      border: 0;
-      padding: 0.05em;
-      background: transparent;
-      font-size: 4.5rem;
-      color: #c3ccd9;
-      z-index: 100;
-      position: fixed;
-      top: 15px;
-      right: 85px;
-      cursor: pointer;
+  img {
+    height: 29px;
+    width: 29px;
+    @media (min-width: 811px) {
+      display: none;
+      z-index: 0;
     }
   }
 `;
@@ -63,13 +69,12 @@ const Ul = styled.ul`
   font-size: 1.13rem;
   line-height: 21px;
 
-  @media (max-width: 810px) {
+  @media (max-width: 811px) {
     height: 100vh;
     width: 100vw;
     position: fixed;
     top: 0;
     right: 0;
-    left: 0;
     bottom: 0;
     background: linear-gradient(
       180deg,
@@ -82,28 +87,34 @@ const Ul = styled.ul`
     align-items: center;
     justify-content: space-around;
     gap: 0.25em;
-    z-index: 11;
+    z-index: 100;
     line-height: 1.2;
     font-size: 1.75rem;
     padding: 4em;
+
+    button {
+      border: 0;
+      padding: 0.05em;
+      background: transparent;
+      font-size: 4.5rem;
+      color: #c3ccd9;
+      z-index: 100;
+      position: fixed;
+      top: 5px;
+      right: 25px;
+      cursor: pointer;
+
+      @media (min-width: 811px) {
+        display: none;
+      }
+    }
   }
 `;
 
 const Li = styled(Link)`
   margin-right: 2em;
-`;
 
-const IconWrapper = styled.button`
-  height: 42;
-  width: 42;
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-`;
-const HamburgerIcon = styled.img`
-  height: 29px;
-  width: 29px;
-  @media (min-width: 812px) {
-    display: none;
+  @media (max-width: 811px) {
+    margin-right: 0;
   }
 `;

@@ -2,8 +2,6 @@ import React from "react";
 import logo from "../images/logo.svg";
 import styled from "styled-components";
 import Navigation from "./Navigation";
-import Hamburger from "./Hamburger";
-import { useState } from "react";
 
 const Navbar = () => {
   return (

@@ -30,3 +30,19 @@ a {
   text-decoration: none;
   color: #c3ccd9;
 }
+
+.display {
+  left: 0;
+}
+
+.notDisplay {
+  left: 200%;
+}
+
+.timesNotDisplay {
+  display: none;
+}
+
+.timesDisplay {
+  display: block;
+}
