@@ -44,7 +44,7 @@ const HeroWrapper = styled.div`
     padding-top: 0.35em;
   }
   @media (max-width: 400px) {
-    height: 785px;
+    height: 815px;
   }
 `;
 
