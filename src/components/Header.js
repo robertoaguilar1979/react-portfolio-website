@@ -44,7 +44,7 @@ const HeroWrapper = styled.div`
     padding-top: 0.35em;
   }
   @media (max-width: 400px) {
-    height: 770px;
+    height: 785px;
   }
 `;
 
@@ -101,7 +101,7 @@ const HeroTextReactShopify = styled.p`
     margin: 0;
     padding: 0;
   }
-  @media (max-width: 360px) {
+  @media (max-width: 400px) {
     font-size: 0.95rem;
     line-height: 25px;
     text-align: center;
